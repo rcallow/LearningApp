@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_topleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classroom"
+        app:layout_constraintBottom_toTopOf="@id/image_bottomleft"
+        app:layout_constraintEnd_toStartOf="@id/text_topmiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_topleft" />
+
+    <TextView
+        android:id="@+id/text_topmiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/image_topmiddle"
+        app:layout_constraintBottom_toTopOf="@id/image_bottommiddle"
+        app:layout_constraintStart_toEndOf="@id/text_topleft"
+        app:layout_constraintEnd_toStartOf="@id/text_topright"/>
+
+    <TextView
+        android:id="@+id/text_topright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/image_topright"
+        app:layout_constraintBottom_toTopOf="@id/image_bottomright"
+        app:layout_constraintStart_toEndOf="@id/text_topmiddle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_bottomleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/image_bottomleft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textbottommiddle"/>
+
+    <TextView
+        android:id="@+id/textbottommiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/image_bottommiddle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_bottomleft"
+        app:layout_constraintEnd_toStartOf="@id/text_bottomright"/>
+
+    <TextView
+        android:id="@+id/text_bottomright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/image_bottomright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textbottommiddle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/image_bottomright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/text_bottomright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_bottommiddle"
+        app:layout_constraintTop_toBottomOf="@id/text_topright"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_topmiddle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/text_topmiddle"
+        app:layout_constraintEnd_toStartOf="@id/image_topright"
+        app:layout_constraintStart_toEndOf="@id/image_topleft"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_topleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/text_topleft"
+        app:layout_constraintEnd_toStartOf="@+id/image_topmiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_topright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/text_topright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_topmiddle"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_bottomleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/text_bottomleft"
+        app:layout_constraintEnd_toStartOf="@+id/image_bottommiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_topleft"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_bottommiddle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/textbottommiddle"
+        app:layout_constraintEnd_toStartOf="@+id/image_bottomright"
+        app:layout_constraintStart_toEndOf="@id/image_bottomleft"
+        app:layout_constraintTop_toBottomOf="@id/text_topmiddle"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to KidCube"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
